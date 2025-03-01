@@ -1,0 +1,157 @@
+.st-apostille-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.1);
+  padding: 30px !important;
+}
+
+.st-apostille-notice .st-apostille-welcome-message {
+  max-width: 650px;
+}
+
+.st-apostille-notice .st-apostille-welcome-message .st-apostille-action-buttons {
+  margin-top: 30px;
+}
+
+.st-apostille-notice .st-apostille-welcome-message .st-apostille-action-buttons a .dashicons {
+  font-size: 12px;
+  line-height: 30px;
+}
+@media screen and (max-width: 1366px) {
+  .st-apostille-notice .image-wrap img {
+    max-width: 90%;
+  }
+  .st-apostille-notice .st-apostille-welcome-message p {
+    font-size: 13px;
+  }
+
+}
+
+.st-apostille-dot-flashing {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -1px;
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #3c434a;
+  color: #3c434a;
+  -webkit-animation: dotFlashing 1s infinite linear alternate;
+          animation: dotFlashing 1s infinite linear alternate;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.st-apostille-dot-flashing::before, .st-apostille-dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.st-apostille-dot-flashing::before {
+  left: -6px;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #3c434a;
+  color: #3c434a;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+          animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.st-apostille-dot-flashing::after {
+  left: 6px;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #3c434a;
+  color: #3c434a;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+          animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes dotFlashing {
+  0% {
+    background-color: #3c434a;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #3c434a;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* st-apostille-compare-feature Css start */
+.st-apostille-compare-feature{
+  width: 29%;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.st-apostille-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: -8px;
+}
+.st-apostille-compare-th, .st-compare-td, .st-apostille-compare-td-pro , .st-apostille-compare-td-free, .st-apostille-compare-th-pro {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+.st-apostille-compare-th , .st-apostille-compare-th-pro {
+  background-color: #023252;
+  text-align: center;
+  color: white;
+}
+
+.st-apostille-compare-td-pro, .st-apostille-compare-td-free {
+  text-align: center;
+}
+.st-apostille-compare-feature img{
+  width: 18px;
+}
+.st-apostille-portal-btn a{
+  margin-bottom: 10px !important;
+  font-weight: bold;
+  text-align: center;
+  width: 49.5%;
+  padding: 5px !important;
+  border-radius: 25px !important;
+}
+.st-apostille-feature-comparison{
+  text-align: center;
+  background-color: #5f3afc;
+  color: white;
+  margin-top: 0;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: poppins;
+}
